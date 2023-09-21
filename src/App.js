@@ -1,5 +1,12 @@
+import { GlobalStyles } from './globlaStyles';
+
 function App() {
-  return <div className='App'>this is my app</div>;
+  return (
+    <>
+      <GlobalStyles />
+      Vehicle
+    </>
+  );
 }
 
 export default App;
