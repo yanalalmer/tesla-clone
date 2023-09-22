@@ -10,6 +10,10 @@ export const SHeader = styled.header`
   padding: 0 32px;
   height: ${variables.spacing.headerHeight};
   background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
 `;
 export const SHeaderLogo = styled.div`
   flex: 1;
@@ -45,21 +49,6 @@ export const SHeaderMenu = styled.ol`
     flex-direction: column;
     align-items: normal;
     padding: 0 18px;
-  }
-`;
-export const SHeaderItem = styled.li`
-  cursor: pointer;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  @media ${variables.query.xl} {
-    text-align: left;
-    inline-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
-    padding: 16px 8px;
   }
 `;
 export const SMobileOnly = styled.div`
@@ -105,9 +94,11 @@ export const SHeaderArrow = styled.img`
 `;
 export const SHeaderBtnSpan = styled.span`
   margin: 0 8px;
-  padding: 4px 8px;
+  padding: 8px 10px;
+  border-radius: 4px;
   text-transform: capitalize;
   font-weight: 500;
+  transition: all 0.33s ease-in-out;
   @media ${variables.query.xl} {
     font-size: 17px;
     padding: 0;
@@ -125,7 +116,29 @@ export const SHeaderIcon = styled.img`
   width: 36px;
   height: 36px;
   padding: 4px 8px;
+  transition: all 0.33s ease-in-out;
+  &:hover {
+    background-color: ${variables.colors.lightGrey};
+  }
 `;
 export const SHeaderIconsLink = styled.a`
   cursor: pointer;
+`;
+export const SHeaderItem = styled.li`
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  @media ${variables.query.xl} {
+    text-align: left;
+    inline-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 16px 8px;
+  }
+  &:hover ${SHeaderBtnSpan} {
+    background-color: ${variables.colors.lightGrey};
+  }
 `;

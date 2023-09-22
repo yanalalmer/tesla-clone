@@ -40,7 +40,7 @@ const Navbar = ({ negative }) => {
         <SMobileOnly>
           <SHeaderCloseBtn>
             <svg
-              class='tds-icon tds-icon-close tds-modal-close-icon'
+              className='tds-icon tds-icon-close tds-modal-close-icon'
               viewBox='0 0 24 24'
               xmlns='http://www.w3.org/2000/svg'
             >
