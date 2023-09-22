@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import GothamSSm from './assets/fonts/GothamSSm.woff2';
-import GothamSSmMedium from './assets/fonts/GothamSSm-Medium.woff2';
+import GothamSSm from '../assets/fonts/GothamSSm.woff2';
+import GothamSSmMedium from '../assets/fonts/GothamSSm-Medium.woff2';
 
 export const GlobalStyles = createGlobalStyle`
     @font-face {

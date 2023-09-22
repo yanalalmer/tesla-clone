@@ -1,10 +1,12 @@
-import { GlobalStyles } from './globlaStyles';
+import { GlobalStyles } from './styles/globlaStyles';
+// components
+import { Navbar } from './components';
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      Vehicle
+      <Navbar />
     </>
   );
 }
