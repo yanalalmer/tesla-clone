@@ -1,4 +1,6 @@
 import { GlobalStyles } from './styles/globlaStyles';
+// pages
+import { HomePage } from './pages';
 // components
 import { Navbar } from './components';
 
@@ -7,7 +9,7 @@ function App() {
     <>
       <GlobalStyles />
       <Navbar />
-      <div>this is</div>
+      <HomePage />
     </>
   );
 }
