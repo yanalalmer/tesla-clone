@@ -9,6 +9,7 @@ export const SHeader = styled.header`
   align-items: center;
   padding: 0 32px;
   height: ${variables.spacing.headerHeight};
+  background-color: transparent;
 `;
 export const SHeaderLogo = styled.div`
   flex: 1;
@@ -17,6 +18,7 @@ export const SHeaderLogo = styled.div`
   align-items: center;
 `;
 export const SHeaderLink = styled.a`
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   min-block-size: 32px;
@@ -31,17 +33,86 @@ export const SHeaderMenu = styled.ol`
   align-items: center;
   justify-content: center;
   height: 100%;
+  @media ${variables.query.xl} {
+    background-color: ${variables.colors.white};
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 499;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding: 0 18px;
+  }
 `;
 export const SHeaderItem = styled.li`
+  cursor: pointer;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  @media ${variables.query.xl} {
+    text-align: left;
+    inline-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 16px 8px;
+  }
+`;
+export const SMobileOnly = styled.div`
+  display: none;
+  @media ${variables.query.xl} {
+    display: block;
+    img {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      margin-right: 8px;
+    }
+    li {
+      justify-content: initial;
+    }
+    span:nth-child(2) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+`;
+export const SHeaderCloseBtn = styled.button`
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+`;
+export const SHeaderArrow = styled.img`
+  display: none;
+  @media ${variables.query.xl} {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
 `;
 export const SHeaderBtnSpan = styled.span`
   margin: 0 8px;
   padding: 4px 8px;
   text-transform: capitalize;
   font-weight: 500;
+  @media ${variables.query.xl} {
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+  }
 `;
 export const SHeaderIconsMenu = styled.ol`
   display: flex;
@@ -55,4 +126,6 @@ export const SHeaderIcon = styled.img`
   height: 36px;
   padding: 4px 8px;
 `;
-export const SHeaderIconsLink = styled.a``;
+export const SHeaderIconsLink = styled.a`
+  cursor: pointer;
+`;

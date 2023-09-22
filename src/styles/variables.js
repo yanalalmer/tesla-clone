@@ -39,6 +39,8 @@ export const query = {
 };
 export const colors = {
   black: '#171A20',
-  lightGrey: '##F1F0EF',
+  lightGrey: '#F1F0EF',
   darkGrey: '#656566',
+  grey: '#5c5e62',
+  white: '#ffff',
 };
