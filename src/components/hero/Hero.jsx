@@ -23,7 +23,7 @@ const Hero = () => {
       </SHeroTitleContainer>
       <SHeroBottom>
         <SHeroButtons>
-          <Button negative text='order now' />
+          <Button isNegative text='order now' />
           <Button text='demo drive' />
         </SHeroButtons>
         <a href='/'>

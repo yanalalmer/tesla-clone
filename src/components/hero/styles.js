@@ -42,11 +42,14 @@ export const SHeroBottom = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media ${variables.query.sm} {
+    width: 100%;
+  }
 `;
 export const SHeroButtons = styled.div`
+  width: 600px;
   padding: 24px;
   margin-bottom: 16px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   display: grid;
@@ -54,6 +57,16 @@ export const SHeroButtons = styled.div`
   grid-auto-flow: column;
   justify-content: center;
   grid-gap: 16px 24px;
+  @media ${variables.query.md} {
+    width: 400px;
+  }
+  @media ${variables.query.sm} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
 `;
 export const SHeroMessage = styled.p`
   font-size: 12px;

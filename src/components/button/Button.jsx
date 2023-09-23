@@ -2,8 +2,15 @@ import React from 'react';
 // styles
 import { SButton } from './styles';
 
-const Button = ({ negative, text }) => {
-  return <SButton negative={negative}>{text}</SButton>;
+const Button = (props) => {
+  return (
+    <SButton
+      negative={props.isNegative}
+      onClick={props.onclick ? props.onclick : null}
+    >
+      {props.text}
+    </SButton>
+  );
 };
 
 export default Button;

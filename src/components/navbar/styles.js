@@ -37,6 +37,7 @@ export const SHeaderMenu = styled.ol`
   align-items: center;
   justify-content: center;
   height: 100%;
+  transition: all 0.33s ease-in-out;
   @media ${variables.query.xl} {
     background-color: ${variables.colors.white};
     position: fixed;
@@ -49,6 +50,8 @@ export const SHeaderMenu = styled.ol`
     flex-direction: column;
     align-items: normal;
     padding: 0 18px;
+    visibility: ${(props) => (props.open ? 'visible' : 'hidden')};
+    opacity: ${(props) => (props.open ? '1' : '0')};
   }
 `;
 export const SMobileOnly = styled.div`
@@ -111,6 +114,9 @@ export const SHeaderIconsMenu = styled.ol`
   justify-content: flex-end;
   flex: 1;
   height: fit-content;
+  @media ${variables.query.xl} {
+    display: none;
+  }
 `;
 export const SHeaderIcon = styled.img`
   width: 36px;

@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         font-family: 'GothamSSm', sans-serif;
         font-size: 14px;
+        overflow-x: hidden;
     }
     a {
         text-decoration: none;
@@ -30,8 +31,8 @@ export const GlobalStyles = createGlobalStyle`
     ol, ul {
         list-style: none;
     }
-    table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 `;
