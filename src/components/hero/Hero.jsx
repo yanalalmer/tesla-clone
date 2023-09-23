@@ -13,12 +13,12 @@ import {
   SHeroMessage,
 } from './styles';
 
-const Hero = () => {
+const Hero = ({ car }) => {
   return (
-    <SHeroContainer>
+    <SHeroContainer background={car.backgroundImg}>
       <SHeroTitleContainer>
-        <SHeroTitle>Model 3</SHeroTitle>
-        <SHeroPara>From $39,390*</SHeroPara>
+        <SHeroTitle>{car.title}</SHeroTitle>
+        <SHeroPara>From {car.price}</SHeroPara>
         <SHeroSmall>after federal tax credit & est. gas savings</SHeroSmall>
       </SHeroTitleContainer>
       <SHeroBottom>

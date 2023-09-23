@@ -10,7 +10,7 @@ export const SHeader = styled.header`
   padding: 0 32px;
   height: ${variables.spacing.headerHeight};
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;

@@ -11,4 +11,7 @@ export const SButton = styled.button`
   background-color: ${(props) =>
     props.negative ? 'rgba(244, 244, 244, 0.8)' : 'rgba(23, 26, 32, 0.65)'};
   cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
 `;

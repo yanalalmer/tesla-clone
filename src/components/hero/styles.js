@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 import * as variables from '../../styles/variables';
-import background from '../../assets/images/model3.png';
 
 export const SHeroContainer = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(${background});
+  background-image: ${(props) => `url(${props.background})`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  position: relative;
 `;
 export const SHeroTitleContainer = styled.div`
   display: flex;
@@ -23,6 +23,7 @@ export const SHeroTitleContainer = styled.div`
 `;
 export const SHeroTitle = styled.h1`
   font-size: 40px;
+  text-transform: capitalize;
 `;
 export const SHeroPara = styled.p`
   font-size: 20px;
