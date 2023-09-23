@@ -10,7 +10,7 @@ export const SHeroContainer = styled.section`
   background-image: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 `;
 export const SHeroTitleContainer = styled.div`
   display: flex;
