@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import * as variables from '../../styles/variables';
 
 export const SHeader = styled.header`
+  color: ${(props) =>
+    props.isNegative ? variables.colors.white : variables.colors.black};
   z-index: 10;
   display: flex;
   flex-flow: row wrap;
@@ -114,6 +116,7 @@ export const SHeaderIconsMenu = styled.ol`
   justify-content: flex-end;
   flex: 1;
   height: fit-content;
+
   @media ${variables.query.xl} {
     display: none;
   }

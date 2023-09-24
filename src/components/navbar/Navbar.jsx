@@ -25,16 +25,16 @@ import {
   SHeaderIcon,
 } from './styles';
 
-const Navbar = ({ negative }) => {
+const Navbar = ({ isNegative }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <SHeader>
+    <SHeader isNegative={isNegative}>
       <SHeaderLogo>
         <SHeaderLink>
-          <SHeaderImg src={negative ? logoWhite : logo} />
+          <SHeaderImg src={isNegative ? logoWhite : logo} />
         </SHeaderLink>
       </SHeaderLogo>
       <SHeaderMenu open={isOpen}>

@@ -5,7 +5,7 @@ import { SButton } from './styles';
 const Button = (props) => {
   return (
     <SButton
-      negative={props.isNegative}
+      negative={props?.isNegative}
       onClick={props.onclick ? props.onclick : null}
     >
       {props.text}

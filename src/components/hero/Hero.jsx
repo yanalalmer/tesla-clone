@@ -13,21 +13,24 @@ import {
   SHeroMessage,
 } from './styles';
 
-const Hero = ({ car }) => {
+const Hero = ({ item }) => {
+  const { backgroundImg, title, para, small, price, btn1, btn2, message } =
+    item;
   return (
-    <SHeroContainer background={car.backgroundImg}>
+    <SHeroContainer background={backgroundImg}>
       <SHeroTitleContainer>
-        <SHeroTitle>{car.title}</SHeroTitle>
-        <SHeroPara>From {car.price}</SHeroPara>
-        <SHeroSmall>after federal tax credit & est. gas savings</SHeroSmall>
+        <SHeroTitle>{title ? title : ''}</SHeroTitle>
+        <SHeroPara>{para ? para : ''}</SHeroPara>
+        <SHeroSmall>{small ? small : ''}</SHeroSmall>
       </SHeroTitleContainer>
       <SHeroBottom>
         <SHeroButtons>
-          <Button isNegative text='order now' />
-          <Button text='demo drive' />
+          <Button isNegative text={btn1} />
+          <Button text={btn2} />
         </SHeroButtons>
+        <SHeroSmall>{price ? price : ''}</SHeroSmall>
         <a href='/'>
-          <SHeroMessage>More information about Tesla for Buisness</SHeroMessage>
+          <SHeroMessage>{message ? message : ''}</SHeroMessage>
         </a>
       </SHeroBottom>
     </SHeroContainer>
