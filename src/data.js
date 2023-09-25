@@ -86,7 +86,7 @@ export const sections = [
 ];
 export const navbarMenu = [
   {
-    name: 'vehicels',
+    name: 'vehicles',
   },
   {
     name: 'energy',
