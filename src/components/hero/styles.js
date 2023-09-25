@@ -11,6 +11,7 @@ export const SHeroContainer = styled.section`
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  scroll-snap-align: start;
 `;
 export const SHeroTitleContainer = styled.div`
   display: flex;

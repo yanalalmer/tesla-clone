@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 // images
 import model3 from '../../assets/images/model3.png';
 import modely from '../../assets/images/modely.png';
@@ -11,13 +12,19 @@ import accessories from '../../assets/images/accessories.png';
 // components
 import { Hero } from '../../components';
 
+const Container = styled.div`
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  overflow-y: scroll;
+`;
+
 const HomePage = () => {
   return (
-    <>
+    <Container>
       {data.map((item, index) => (
         <Hero key={index} item={item} />
       ))}
-    </>
+    </Container>
   );
 };
 
