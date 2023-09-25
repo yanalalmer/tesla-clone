@@ -7,6 +7,10 @@ import solarpanels from './assets/images/solarpanels.png';
 import solarroof from './assets/images/solarroof.png';
 import powerwall from './assets/images/powerwall.png';
 import accessories from './assets/images/accessories.png';
+// icons
+import icon1 from './assets/images/icon1.svg';
+import icon2 from './assets/images/icon2.svg';
+import icon3 from './assets/images/icon3.svg';
 
 export const sections = [
   {
@@ -78,5 +82,66 @@ export const sections = [
     backgroundImg: accessories,
     btn1: 'shop now',
     btn2: 'learn more',
+  },
+];
+export const navbarMenu = [
+  {
+    name: 'vehicels',
+  },
+  {
+    name: 'energy',
+  },
+  {
+    name: 'charging',
+  },
+  {
+    name: 'discover',
+  },
+  {
+    name: 'shop',
+  },
+];
+export const navIcons = [
+  {
+    icon: icon1,
+    link: '',
+  },
+  {
+    icon: icon2,
+    link: '',
+  },
+  {
+    icon: icon3,
+    link: '',
+  },
+];
+export const footerList = [
+  {
+    title: 'Tesla © 2023',
+    link: '/about',
+  },
+  {
+    title: 'Privacy & Legal',
+    link: '/about',
+  },
+  {
+    title: 'Vehicle Recalls',
+    link: '/about',
+  },
+  {
+    title: 'contact',
+    link: '/about',
+  },
+  {
+    title: 'news',
+    link: '/about',
+  },
+  {
+    title: 'get updates',
+    link: '/about',
+  },
+  {
+    title: 'locations',
+    link: '/about',
   },
 ];

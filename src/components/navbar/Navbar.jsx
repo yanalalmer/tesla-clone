@@ -1,11 +1,10 @@
 import React from 'react';
+import { navbarMenu, navIcons } from '../../data';
 import logo from '../../assets/images/logo.svg';
 import logoWhite from '../../assets/images/logoWhite.svg';
-import icon1 from '../../assets/images/icon1.svg';
-import icon2 from '../../assets/images/icon2.svg';
-import icon3 from '../../assets/images/icon3.svg';
 import arrow from '../../assets/images/arrow.svg';
 import closeBtn from '../../assets/images/closeBtn.svg';
+import icon3 from '../../assets/images/icon3.svg';
 // components
 import { Button } from '../../components';
 // styles
@@ -38,7 +37,7 @@ const Navbar = ({ isNegative }) => {
         </SHeaderLink>
       </SHeaderLogo>
       <SHeaderMenu open={isOpen}>
-        {middleMenu.map((item, index) => (
+        {navbarMenu.map((item, index) => (
           <SHeaderItem key={index}>
             <SHeaderBtnSpan>{item.name}</SHeaderBtnSpan>
             <SHeaderArrow src={arrow} />
@@ -63,7 +62,7 @@ const Navbar = ({ isNegative }) => {
         <Button text='menu' isNegative onclick={handleClick} />
       </SMobileOnly>
       <SHeaderIconsMenu>
-        {icons.map((icon, index) => (
+        {navIcons.map((icon, index) => (
           <SHeaderIconsLink key={index}>
             <SHeaderIcon src={icon.icon} alt='icon' />
           </SHeaderIconsLink>
@@ -74,36 +73,3 @@ const Navbar = ({ isNegative }) => {
 };
 
 export default Navbar;
-
-const middleMenu = [
-  {
-    name: 'vehicels',
-  },
-  {
-    name: 'energy',
-  },
-  {
-    name: 'charging',
-  },
-  {
-    name: 'discover',
-  },
-  {
-    name: 'shop',
-  },
-];
-
-const icons = [
-  {
-    icon: icon1,
-    link: '',
-  },
-  {
-    icon: icon2,
-    link: '',
-  },
-  {
-    icon: icon3,
-    link: '',
-  },
-];
