@@ -32,7 +32,7 @@ const Navbar = ({ isNegative }) => {
   return (
     <SHeader isNegative={isNegative}>
       <SHeaderLogo>
-        <SHeaderLink>
+        <SHeaderLink href='/'>
           <SHeaderImg src={isNegative ? logoWhite : logo} />
         </SHeaderLink>
       </SHeaderLogo>
