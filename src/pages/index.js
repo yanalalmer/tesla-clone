@@ -15,3 +15,5 @@ export { default as HomeChargingPage } from './home-charging/HomeChargingPage';
 export { default as SuperchargerPage } from './super-charger/SuperchargerPage';
 // Shop
 export { default as ShopPage } from './shop/ShopPage';
+// 404
+export { default as NoPage } from './NoPage';

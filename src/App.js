@@ -15,6 +15,7 @@ import {
   HomeChargingPage,
   SuperchargerPage,
   ShopPage,
+  NoPage,
 } from './pages';
 // components
 import { Navbar, Footer } from './components';
@@ -42,7 +43,8 @@ function App() {
         <Route path='/supercharger' element={<SuperchargerPage />} />
         {/* Shop */}
         <Route path='/shop' element={<ShopPage />} />
-        {/* <Route path="*" element={<NoPage />} /> */}
+        {/* 404 */}
+        <Route path='*' element={<NoPage />} />
       </Routes>
       <Footer isNegative />
     </>
