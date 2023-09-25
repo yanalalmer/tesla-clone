@@ -12,8 +12,8 @@ export const SFooterContainer = styled.footer`
   background-color: transparent;
   height: 70px;
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: 0;
 `;
 export const SFooterNav = styled.nav`
   flex-flow: column;

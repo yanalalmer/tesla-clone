@@ -12,11 +12,13 @@ const Container = styled.div`
 
 const HomePage = () => {
   return (
-    <Container>
-      {sections.map((item, index) => (
-        <Hero key={index} item={item} />
-      ))}
-    </Container>
+    <>
+      <Container>
+        {sections.map((item, index) => (
+          <Hero key={index} item={item} />
+        ))}
+      </Container>
+    </>
   );
 };
 
