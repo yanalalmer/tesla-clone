@@ -24,16 +24,16 @@ import {
   SHeaderIcon,
 } from './styles';
 
-const Navbar = ({ isNegative }) => {
+const Navbar = ({ isnegative }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <SHeader isNegative={isNegative}>
+    <SHeader isnegative={isnegative}>
       <SHeaderLogo>
         <SHeaderLink href='/'>
-          <SHeaderImg src={isNegative ? logoWhite : logo} />
+          <SHeaderImg src={isnegative ? logoWhite : logo} />
         </SHeaderLink>
       </SHeaderLogo>
       <SHeaderMenu open={isOpen}>
@@ -59,7 +59,7 @@ const Navbar = ({ isNegative }) => {
         </SMobileOnly>
       </SHeaderMenu>
       <SMobileOnly style={{ width: '72px' }}>
-        <Button text='menu' isNegative onclick={handleClick} />
+        <Button text='menu' isnegative onclick={handleClick} />
       </SMobileOnly>
       <SHeaderIconsMenu>
         {navIcons.map((icon, index) => (

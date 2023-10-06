@@ -4,14 +4,14 @@ import * as variables from '../../styles/variables';
 export const SFooterContainer = styled.footer`
   padding: 0 24px;
   color: ${(props) =>
-    props.isNegative ? variables.colors.white : variables.colors.grey};
+    props.isnegative ? variables.colors.white : variables.colors.grey};
   font-size: 12px;
   inline-size: 100%;
   display: flex;
   flex-flow: row nowrap;
   background-color: transparent;
   height: 70px;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   right: 0;

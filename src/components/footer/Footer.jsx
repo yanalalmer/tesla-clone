@@ -9,9 +9,9 @@ import {
   SFooterListItemLink,
 } from './styles';
 
-const Footer = ({ isNegative }) => {
+const Footer = ({ isnegative }) => {
   return (
-    <SFooterContainer isNegative={isNegative}>
+    <SFooterContainer isnegative={isnegative}>
       <SFooterNav>
         <SFooterList>
           {footerList.map((item, index) => (

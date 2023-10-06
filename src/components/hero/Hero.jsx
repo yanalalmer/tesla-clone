@@ -25,7 +25,7 @@ const Hero = ({ item }) => {
       </SHeroTitleContainer>
       <SHeroBottom>
         <SHeroButtons>
-          <Button isNegative text={btn1} />
+          <Button isnegative text={btn1} />
           <Button text={btn2} />
         </SHeroButtons>
         <SHeroSmall>{price ? price : ''}</SHeroSmall>

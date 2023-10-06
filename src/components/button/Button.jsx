@@ -2,9 +2,9 @@ import React from 'react';
 // styles
 import { SButton } from './styles';
 
-const Button = ({ isNegative, onclick, text }) => {
+const Button = ({ isnegative, onclick, text }) => {
   return (
-    <SButton isNegative={isNegative} onClick={onclick}>
+    <SButton isnegative={isnegative} onClick={onclick}>
       {text}
     </SButton>
   );

@@ -3,7 +3,7 @@ import * as variables from '../../styles/variables';
 
 export const SHeader = styled.header`
   color: ${(props) =>
-    props.isNegative ? variables.colors.white : variables.colors.black};
+    props.isnegative ? variables.colors.white : variables.colors.black};
   z-index: 10;
   display: flex;
   flex-flow: row wrap;
