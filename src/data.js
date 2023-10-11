@@ -7,6 +7,11 @@ import solarpanels from './assets/images/solarpanels.png';
 import solarroof from './assets/images/solarroof.png';
 import powerwall from './assets/images/powerwall.png';
 import accessories from './assets/images/accessories.png';
+// mockups
+import modelsmockup from './assets/images/modelsmockup.avif';
+import model3mockup from './assets/images/model3mockup.avif';
+import modelymockup from './assets/images/modelymockup.avif';
+import modelxmockup from './assets/images/modelxmockup.avif';
 // icons
 import icon1 from './assets/images/icon1.svg';
 import icon2 from './assets/images/icon2.svg';
@@ -87,6 +92,13 @@ export const sections = [
 export const navbarMenu = [
   {
     name: 'vehicles',
+    id: 1,
+    children: [
+      { image: modelsmockup, title: 'model s' },
+      { image: model3mockup, title: 'model 3' },
+      { image: modelxmockup, title: 'model x' },
+      { image: modelymockup, title: 'model y' },
+    ],
   },
   {
     name: 'energy',
